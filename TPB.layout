@@ -4,11 +4,7 @@
 	<ActiveTarget name="Debug" />
 	<File name="main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-<<<<<<< HEAD
-			<Cursor1 position="296" topLine="127" />
-=======
-			<Cursor1 position="4462" topLine="165" />
->>>>>>> 8d3144aead940028c0d613428718775d2339d8ab
+			<Cursor1 position="0" topLine="184" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

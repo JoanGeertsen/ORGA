@@ -181,28 +181,22 @@ int main(){
     }
 
 
-    void reemplazarConPuntero(int * arr, int a, int n , int size){
-        int i = 0;
-        while(i<size){
+ void reemplazarconpuntero(int * arr, int a, int n , int size){
 
-           if(*arr == a){
-            *arr = n;
+        for(int i=0;i<size;i++){
+            if(*arr==a){
+                *arr=n;
+            }
             arr++;
-           }
-
-            i++;
         }
-
+    }
     }
 
-    void imprimir_arreglo(int arr[],int cant){
-
+   void imprimir_arreglo(int arr[],int size){
         int elem;
         //int arrayLength = sizeof(arr)/sizeof(arr[0]);
-        for(int i = 0; i<cant; i++){
-            elem = arr[i];
-            printf("%d",elem);
-
+       for(int i = 0; i < size; i++){
+            printf("%d\t",arr[i]);
         }
     }
 
@@ -220,4 +214,4 @@ int main(){
 
     return 0;
 }
-}
+
