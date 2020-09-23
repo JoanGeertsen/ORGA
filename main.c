@@ -90,7 +90,7 @@ int main(){
 
         if(es_ascendente(a) && es_ascendente(b)){
 
-                if(a[i]>b[j]){//si el menor elemento lo tiene a
+                if(a[i]<b[j]){//si el menor elemento lo tiene a
                     nuevo[k]=a[i];//inicializo el arreglo con ese elemento
                     k++;
                 }
@@ -101,16 +101,18 @@ int main(){
 
             while(i< aLength && j< bLength){
 
-                if(a[i] < b[j]){
-                    if(a[i]!=nuevo[k-1]){//Si no se repite un elmento.
+                if(a[i] <= b[j]){
+                    if(a[i]!=nuevo[k-1]){//Si no se repite un elemento.
                         nuevo[k] = a[i];
-                        k++;}
+                        k++;
+                    }
                     i++;
                 }
                 else{
-                    if(b[j]!=nuevo[k-1]){//Si no se repite un elmento.
+                    if(b[j]!=nuevo[k-1]){//Si no se repite un elemento.
                         nuevo[k] = b[j];
-                        k++;}
+                        k++;
+                    }
                     j++;
                 }
             }
@@ -153,19 +155,37 @@ int main(){
             return es;
 	}
 
+
+
     /*
     cada apricion del entero a sea reemplazada por n
     */
 
-    void reemplazar(int arr, int a, int n){
-        int arrayLength = sizeof(a)/sizeof(a[0]);
+    void reemplazar(int arr[], int a, int n){
+        int arrayLength = sizeof(arr)/sizeof(arr[0]);
         int i = 0;
 
         while(i<arrayLength){
-            if(arr[i] == a)
+            if(arr[i] == a){
                 arr[i] = n;
+            }
         }
     }
+
+
+    void reemplazar(int * arr, int a, int n , int size){
+        int i = 0;
+        while(i<size){
+
+
+
+        }
+
+
+    }
+
+
+
 
 
 
