@@ -142,8 +142,19 @@ int main(){
             return es;
 	}
 
+    /*
+    cada apricion del entero a sea reemplazada por n
+    */
 
-//duba
+    void reemplazar(int arr, int a, int n){
+        int arrayLength = sizeof(a)/sizeof(a[0]);
+        int i = 0;
+
+        while(i<arrayLength){
+            if(arr[i] == a)
+                arr[i] = n;
+        }
+    }
 
 
 
