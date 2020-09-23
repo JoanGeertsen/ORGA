@@ -90,7 +90,8 @@ int main(){
 
         if(es_ascendente(a) && es_ascendente(b)){
 
-                if(a[i]<=b[j]){//si el menor elemento lo tiene a
+                if(a[i]<b[j]){//si el menor elemento lo tiene a
+
                     nuevo[k]=a[i];//inicializo el arreglo con ese elemento
                     k++;
                     i++;
@@ -104,15 +105,18 @@ int main(){
             while(i< aLength && j< bLength){
 
                 if(a[i] <= b[j]){
-                    if(a[i]!=nuevo[k-1]){//Si no se repite un elmento.
+
+                    if(a[i]!=nuevo[k-1]){//Si no se repite un elemento
                         nuevo[k] = a[i];
-                        k++;}
+                        k++;
+                    }
                     i++;
                 }
                 else{
-                    if(b[j]!=nuevo[k-1]){//Si no se repite un elmento.
+                    if(b[j]!=nuevo[k-1]){//Si no se repite un elemento.
                         nuevo[k] = b[j];
-                        k++;}
+                        k++;
+                    }
                     j++;
                 }
             }
@@ -155,6 +159,8 @@ int main(){
             return es;
 	}
 
+
+
     /*
     Implemente un procedimiento que, dado un arreglo de enteros arr y dos enteros a y n,
     modifique el arreglo arr de forma tal que cada aparici´on del entero a sea reemplazada por
@@ -167,9 +173,27 @@ int main(){
 
         while(i<arrayLength){
             if(arr[i] == a){
-                arr[i] = n;}
+
+                arr[i] = n
+
+	}
+
+            }
         }
     }
+
+
+    void reemplazar(int * arr, int a, int n , int size){
+        int i = 0;
+        while(i<size){
+
+        }
+
+
+    }
+
+
+
 
 
 
