@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1600817383 source:c:\users\camia\desktop\orga\tpb\main.c
+	<stdio.h>
+	<stdlib.h>
+
