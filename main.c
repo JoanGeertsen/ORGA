@@ -90,17 +90,28 @@ int main(){
 
         if(es_ascendente(a) && es_ascendente(b)){
 
+                if(a[i]>b[j]){//si el menor elemento lo tiene a
+                    nuevo[k]=a[i];//inicializo el arreglo con ese elemento
+                    k++;
+                }
+                else{//si lo tiene b
+                    nuevo[k]=b[j];//lo inicializo con ese elemento
+                    k++;
+                }
+
             while(i< aLength && j< bLength){
 
                 if(a[i] < b[j]){
-                    nuevo[k] = a[i];
+                    if(a[i]!=nuevo[k-1]){//Si no se repite un elmento.
+                        nuevo[k] = a[i];
+                        k++;}
                     i++;
-                    j++;
                 }
                 else{
-                    nuevo[k] = b[j];
+                    if(b[j]!=nuevo[k-1]){//Si no se repite un elmento.
+                        nuevo[k] = b[j];
+                        k++;}
                     j++;
-                    k++;
                 }
             }
 
