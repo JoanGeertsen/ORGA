@@ -69,10 +69,10 @@ int main(){
             return es;
 	}
 
-
+/*
 	int b[10] = {5,1,6,7,10,9,8,5,4,7};
 	int es = ascendente(b,5);
-	printf("Ascendente es %d",es);
+	printf("Ascendente es %d",es);*/
 
 	/*Un procedimiento que reciba dos arreglos de enteros A1 y A2, cada uno con una
     cierta cantidad de elementos previamente ordenados de forma ascendente, y que
@@ -173,24 +173,44 @@ int main(){
 
         while(i<arrayLength){
             if(arr[i] == a){
-
-                arr[i] = n
-
-	}
-
+                arr[i] = n;
             }
+
+            i++;
         }
     }
 
 
-    void reemplazar(int * arr, int a, int n , int size){
+    void reemplazarConPuntero(int * arr, int a, int n , int size){
         int i = 0;
         while(i<size){
 
+           if(*arr == a){
+            *arr = n;
+            arr++;
+           }
+
+            i++;
         }
 
-
     }
+
+    void imprimir_arreglo(int arr[],int cant){
+
+        int elem;
+        //int arrayLength = sizeof(arr)/sizeof(arr[0]);
+        for(int i = 0; i<cant; i++){
+            elem = arr[i];
+            printf("%d",elem);
+
+        }
+    }
+
+    //Test 6b
+
+    int ar[10] = {1,2,3,4,5,10,22,2,2,5};
+   // reemplazarConPuntero(&ar,2,666,10);
+    imprimir_arreglo(ar,10);
 
 
 
