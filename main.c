@@ -167,11 +167,11 @@ int main(){
     el entero n. Analice dos variantes, una en funci´on de cada uno de los siguientes prototipos:
     */
 
-    void reemplazar(int arr[], int a, int n){
-        int arrayLength = sizeof(arr)/sizeof(arr[0]);
+    void reemplazar(int arr[], int a, int n, int size){
+        //int arrayLength = sizeof(arr)/sizeof(arr[0]);
         int i = 0;
 
-        while(i<arrayLength){
+        while(i<size){
             if(arr[i] == a){
                 arr[i] = n;
             }
