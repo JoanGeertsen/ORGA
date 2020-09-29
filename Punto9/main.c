@@ -11,19 +11,22 @@ escritura.
 //PUNTO 9
 void imprimir_archivos(FILE *f1, FILE* f2){
     char c;
-    fpos_t pos;
 
-    fgetpos(f1, &pos);
+
     mostrar_archivo(f1);
+   rewind(f1);
 
-    fsetpos(f1, &pos);																																																				////////////////NO ANDA RWIND///////////////////
     while(feof(f1) == 0){//Copio f1 en f2
         c = fgetc(f1);
         fputc(c,f2);
     }
     printf("\n");
+
+    rewind(f2);
     mostrar_archivo(f2);
 }
+
+
 
 
 void mostrar_archivo(FILE *f){
