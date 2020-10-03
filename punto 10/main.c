@@ -28,7 +28,7 @@ int esta_en(char oracion[], char palabra[]){
             while(oracion[cdo]==palabra[cdp] && !encontre && oracion[cdo]!='\n'){       // mientras sean iguales, no haya encontrado y no sea el fin de la oracion
                 cdp++;      //avanzo la palabra
                 cdo++;      //avanzo la oracion
-                if(oracion[cdo]==' '){      //si llegue a un espacio en la oracion
+                if(oracion[cdo]==' ' || palabra[cdp]=='\0' || oracion[cdo]=='\n'){      //si llegue a un espacio en la oracion
                         encontre=1;
                 }
             }
@@ -48,7 +48,7 @@ int esta_en(char oracion[], char palabra[]){
 void main()
 {
    FILE * f1;
-   char palabra[1000]="hola";
+   char palabra[1000]="hola\0";
 
    f1 = fopen ("f.txt", "r");
 
