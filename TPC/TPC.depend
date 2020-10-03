@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1601659514 source:c:\users\camia\desktop\tpc\empleado.c
+	"empleado.h"
+
+1601652055 c:\users\camia\desktop\tpc\empleado.h
+
+1601678796 source:c:\users\joang\onedrive\desktop\oc\orga-master\tpc\empleado.c
+	"empleado.h"
+
+1601678796 c:\users\joang\onedrive\desktop\oc\orga-master\tpc\empleado.h
+
+1601678796 source:c:\users\joang\onedrive\desktop\oc\orga-master\tpc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdlib.h>
+	"empleado.h"
+
